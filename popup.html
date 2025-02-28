@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Fullscreen Screenshot Assistant</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    button {
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    #preview {
+      max-width: 100%;
+      margin-top: 10px;
+      display: none;
+    }
+    .shortcut-hint {
+      font-size: 12px;
+      color: #666;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button id="captureBtn">Capture Full Page</button>
+    <button id="copyBtn" style="display: none;">Copy to Clipboard</button>
+    <button id="downloadBtn" style="display: none;">Download Screenshot</button>
+    <img id="preview" alt="Screenshot Preview">
+   
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 
